@@ -4,7 +4,7 @@
 read -p "Enter the S3 bucket name: " BUCKET_NAME
 read -p "Enter the AWS region (default: us-east-1): " REGION
 
-# Set default region if not provided
+# Set default region if it is not provided
 REGION=${REGION:-us-east-1}
 
 # Create the S3 bucket
