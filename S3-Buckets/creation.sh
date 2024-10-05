@@ -38,7 +38,7 @@ if [[ "$PUBLIC_ACCESS" == "y" ]]; then
     aws s3api put-bucket-policy --bucket "$BUCKET_NAME" --policy "$BUCKET_POLICY"
     echo "Public read access granted for bucket '$BUCKET_NAME'."
 else
-    echo "No public access granted for bucket '$BUCKET_NAME'."
+    echo "No public access is granted for bucket '$BUCKET_NAME'."
 fi
 
 echo "S3 bucket setup complete!"
